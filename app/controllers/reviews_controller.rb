@@ -1,8 +1,4 @@
 class ReviewsController < ApplicationController
-  def new
-    @review = Review.new
-    @restaurant = Restaurant.find(params[:restaurant_id])
-  end
 
   def create
     @restaurant = Restaurant.find(params[:restaurant_id])
@@ -20,4 +16,5 @@ class ReviewsController < ApplicationController
       params.require(:review).permit(:content, :raiting)
     end
   end
+
 end
