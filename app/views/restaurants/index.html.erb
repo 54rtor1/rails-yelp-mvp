@@ -1,12 +1,12 @@
 
 <div class="container">
-<h1 class="center">restaurants</h1>
+<h1>All restaurants</h1>
 
   <div class="row row-cols-1 row-cols-md-3 g-4">
        <% @restaurants.each do |restaurant| %>
    <div class="col">
      <div class="card">
-        <img src="<%= restaurant.image_url %>" class="card-img-top" alt="...">
+        <img src="<%= restaurant.image_url %>" class="card-img-top opacity-90" style="background-image: linear-gradient(rgba(0,0,0,0.3)">
         <div class="card-body">
           <h5 class="card-title"><%= restaurant.name %></h5>
          <p class="card-text"><%= restaurant.category %></p>
