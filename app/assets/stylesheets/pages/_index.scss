@@ -18,4 +18,7 @@ img {
   height: 180x;
   width: 280px;
   object-fit: cover;
+    &:hover {
+      opacity: 0.5;
+    }
 }

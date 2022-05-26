@@ -6,7 +6,9 @@
        <% @restaurants.each do |restaurant| %>
    <div class="col">
      <div class="card">
-        <img src="<%= restaurant.image_url %>" class="card-img-top">
+        <%= link_to restaurant_path(restaurant.id) do %>
+         <img src="<%= restaurant.image_url %>" class="card-img-top" width="160" height="180">
+        <% end %>
         <div class="card-body">
           <h5 class="card-title"><%= restaurant.name %></h5>
          <p class="card-text"><%= restaurant.category %></p>
