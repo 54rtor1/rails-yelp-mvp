@@ -8,12 +8,13 @@ puts 'Database Clean'
 
 puts 'Creating Restaurants'
 
-50.times do
+8.times do
   restaurant = Restaurant.create(
     name: Faker::Restaurant.name,
     address: Faker::Address.street_address,
     phone_number: Faker::PhoneNumber.cell_phone,
-    category: ["chinese", "italian", "japanese", "french", "belgian"].sample
+    category: ["chinese", "italian", "japanese", "french", "belgian"].sample,
+    image_url: Faker::LoremFlickr.image(size: "466x180", search_terms: ['food'])
   )
   puts restaurant.name
 end
