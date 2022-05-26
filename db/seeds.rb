@@ -53,7 +53,7 @@ Restaurant.create!(
   address: Faker::Address.street_address,
   phone_number: Faker::PhoneNumber.cell_phone,
   category: ["chinese", "italian", "japanese", "french", "belgian"].sample,
-  image_url: "https://ttburger.com.br/img/novidades-1@2x.1e3f462f.jpg.webp"
+  image_url: "https://blog.myfitnesspal.com/wp-content/uploads/2017/12/Essential-Guide-to-Healthy-Eating-2.png"
 )
 
 puts restaurant.name
