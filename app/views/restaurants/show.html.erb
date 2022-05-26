@@ -1,1 +1,15 @@
+<div class="container">
 <h1>Restaurant name</h1>
+
+
+  <div class="card">
+   <ul class="list-group list-group-flush">
+     <% @restaurant.reviews.each do |restaurant| %>
+      <li class="list-group-item"><%= review.content %></li>
+      </ul>
+       <% end %>
+     <div class="card-footer">
+      link to add new
+    </div>
+  </div>
+</div>
