@@ -8,16 +8,55 @@ puts 'Database Clean'
 
 puts 'Creating Restaurants'
 
-8.times do
-  restaurant = Restaurant.create(
-    name: Faker::Restaurant.name,
-    address: Faker::Address.street_address,
-    phone_number: Faker::PhoneNumber.cell_phone,
-    category: ["chinese", "italian", "japanese", "french", "belgian"].sample,
-    image_url: Faker::LoremFlickr.image(size: "466x180", search_terms: ['food'])
-  )
-  puts restaurant.name
-end
+Restaurant.create!(
+  name: Faker::Restaurant.name,
+  address: Faker::Address.street_address,
+  phone_number: Faker::PhoneNumber.cell_phone,
+  category: ["chinese", "italian", "japanese", "french", "belgian"].sample,
+  image_url: "https://content.api.news/v3/images/bin/104903dc87c2963a2d3e722aa85fe923?width=650"
+)
+
+Restaurant.create!(
+  name: Faker::Restaurant.name,
+  address: Faker::Address.street_address,
+  phone_number: Faker::PhoneNumber.cell_phone,
+  category: ["chinese", "italian", "japanese", "french", "belgian"].sample,
+  image_url: "https://naminhapanela.com/wp-content/uploads/2020/11/Moqueca-de-peixe-2.jpg"
+)
+
+Restaurant.create!(
+  name: Faker::Restaurant.name,
+  address: Faker::Address.street_address,
+  phone_number: Faker::PhoneNumber.cell_phone,
+  category: ["chinese", "italian", "japanese", "french", "belgian"].sample,
+  image_url: "https://vejario.abril.com.br/wp-content/uploads/2021/10/Sushi-Omakase-sushibar-Zona-Sul-credito-Lipe-Borges-2.jpg?quality=70&strip=info&resize=680,453"
+)
+
+Restaurant.create!(
+  name: Faker::Restaurant.name,
+  address: Faker::Address.street_address,
+  phone_number: Faker::PhoneNumber.cell_phone,
+  category: ["chinese", "italian", "japanese", "french", "belgian"].sample,
+  image_url: "https://mhmcdn.manualdohomemmoderno.com.br/?w=781&h=488&quality=100&clipping=crop&url=https://manualdohomemmoderno.com.br/files/2021/07/entenda-qual-e-a-ciencia-por-tras-do-churrasco-perfeito-entenda-qual-e-a-ciencia-por-tras-do-churrasco-perfeito.jpg"
+)
+
+Restaurant.create!(
+  name: Faker::Restaurant.name,
+  address: Faker::Address.street_address,
+  phone_number: Faker::PhoneNumber.cell_phone,
+  category: ["chinese", "italian", "japanese", "french", "belgian"].sample,
+  image_url: "https://wallpaperaccess.com/full/767033.jpg"
+)
+
+Restaurant.create!(
+  name: Faker::Restaurant.name,
+  address: Faker::Address.street_address,
+  phone_number: Faker::PhoneNumber.cell_phone,
+  category: ["chinese", "italian", "japanese", "french", "belgian"].sample,
+  image_url: "https://ttburger.com.br/img/novidades-1@2x.1e3f462f.jpg.webp"
+)
+
+puts restaurant.name
 
 puts "Finished"
 
